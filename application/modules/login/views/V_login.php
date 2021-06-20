@@ -41,14 +41,7 @@
                 <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" name="password">
               </div>
-              <label>Login as</label>
-              <div class="form-group last mb-3">
-                <select name="sebagai" id="sebagai" class="form-control" style="font-size: 15px;">
-                  <option value="admin">Admin</option>
-                  <option value="patient">Patient</option>
-                  <option value="customer">Customer</option>
-                  </select>
-              </div>
+              
               
               <div class="d-flex mb-5 align-items-center">
                 <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
@@ -58,7 +51,7 @@
                 <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
               </div>
 
-              <input type="submit" value="Log In" class="btn btn-block btn-primary">
+              <input type="submit" value="Login" name ="Login" class="btn btn-block btn-primary">
 
               <span class="d-block text-center my-4 text-muted">&mdash; or &mdash;</span>
               

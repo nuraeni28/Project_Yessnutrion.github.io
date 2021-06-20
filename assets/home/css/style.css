@@ -45,7 +45,18 @@ Creation Date: 24 May 2018
 @import url('https://fonts.googleapis.com/css?family=Poppins|Raleway');
 
 /* OTHER IMPORTED CSS */
-
+@import url('animations.css');
+@import url('owl.css');
+@import url('font-awesome.min.css');
+@import url('animate.min.css');
+@import url('flaticon.css');
+@import url('pe-icon-7-stroke.css');
+@import url('stroke-gap.css');
+@import url('magnific-popup.css');
+@import url('fancyBox.css');
+@import url('bootstrap-dropdownhover.css');
+/*@import url('player.css');*/
+@import url('bootstrap-datepicker.min.css');
 
 /*****=====*****=====*****=====*****=====
     02. General CSS 

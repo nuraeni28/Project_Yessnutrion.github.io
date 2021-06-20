@@ -13,13 +13,34 @@
 
     <title>Yessnutrion</title>
 
-   
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/home/css/bootstrap.min.css')?>">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet"  href="<?php echo base_url('assets/home/css/halu.css')?>">    
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/style.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/main.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/util.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/animate.min.css')?>">    
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/animations.css')?>">    
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/bootstrap-datepicker.min.css')?>">    
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/bootstrap-dropdownhover.css')?>">    
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/fancyBox.css')?>">    
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/stroke-gap.css')?>"> 
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/magnific-popup.css')?>"> 
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/owl.css')?>"> 
+     
 
+    
+    
 
-  
+    <!-- Responsive stylesheet  -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/responsive.css')?>">
+
+    <!-- Favicon -->
+    <link href="<?php echo base_url('assets/home/img/favicon.png')?>" rel="shortcut icon" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">   
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,27 +56,7 @@
     <div class="preloader"></div>
 
     <!-- Header navbar start -->
-    <div class="header-topbar style-2">
-        <div class="container padding-none">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 welcome-top">
-                    <ul class="list-inline top-icon">
-                        <li><i class="fa fa-envelope"></i> contact@youdomain.com</li>
-                        <li><i class="fa fa-clock-o"></i> Mon - Sat 8.00 - 18.00</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <ul class="list-inline text-right icon-style-1">
-                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <div class="main-navbar conner-style style-2 position-fixed">
         <div class="container padding-none">
@@ -69,30 +70,33 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand dis-none" href="index-2.html"><img src="img/logo-black.png" alt="">
-                                </a>
-                            <a class="navbar-brand dis-block" href="index-2.html"><img src="img/logo-black.png" alt="">
-                                </a>
+                            <h1 style="font-family: 'Viaoda Libre', cursive; padding-top:20px;">Yess<span style="color: red;">nutrion!</h1>
                         </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations-delay="1.8s" data-animations="fadeInUp">
-                            <ul class="nav navbar-nav bg-none navbar-right style-3">
+                            <ul class="nav navbar-nav navbar-right">
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Home">Home </i></span> </a>
                                         </li>
                             
-                                
                                 <li>
-                                    <a href="#"  role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Depertment">Nutrition Consul</span></a>
+                                    <a href="#"  role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Depertment">About Us</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"  role="button" aria-haspopup="true" aria-expanded="false"><span class="" data-hover="Depertment">Nutrition Consul</span></a>
                                 </li>
                                 <li>
                                     <a href="#"  role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Depertment">Nutrishop</span></a>
                                 </li>
-                                    
+                                 <ul class="nav navbar-nav">
+                                    <li><a href="<?php echo base_url('register');?>"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                                    <li><a href="<?php echo base_url('login');?>"><span class="glyphicon glyphico n-log-in"></span> Login</a></li>
+                                 </ul>
                                 
                                
                                 <li>
                                     <div class="dropdown-buttons">
                                         <div class="btn-group menu-search-box">
+                    
                                             <button type="button" class="btn dropdown-toggle" id="header-drop-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon icon-Search"></i></button>
                                             <ul class="dropdown-menu dropdown-menu-right dropdown-animation" aria-labelledby="header-drop-3">
                                                 <li>
@@ -105,45 +109,10 @@
                                                 </li>
                                             </ul>
                                         </div>
+                                
                                         <div class="btn-group">
-                                            <button type="button" class="btn dropdown-toggle" id="header-drop-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon icon-ShoppingCart"></i><span class="menu-cart">8</span></button>
+                                            <button type="button" class="btn dropdown-toggle" id="header-drop-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon icon-ShoppingCart"></i><span class="menu-cart">0</span></button>
                                             <ul class="dropdown-menu dropdown-menu-right cart dropdown-animation" aria-labelledby="header-drop-4">
-                                                <li>
-                                                    <table class="table table-hover">
-                                                        <thead>
-                                                        <tr>
-                                                            <th class="quantity">QTY</th>
-                                                            <th class="product">Product</th>
-                                                            <th class="amount">Subtotal</th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="quantity">2 x</td>
-                                                            <td class="product"><a href="shop-product.html">Android 4.4 Smartphone</a><span class="small">4.7" Dual Core 1GB</span></td>
-                                                            <td class="amount">$199.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="quantity">3 x</td>
-                                                            <td class="product"><a href="shop-product.html">Android 4.2 Tablet</a><span class="small">7.3" Quad Core 2GB</span></td>
-                                                            <td class="amount">$299.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="quantity">3 x</td>
-                                                            <td class="product"><a href="shop-product.html">Desktop PC</a><span class="small">Quad Core 3.2MHz, 8GB RAM, 1TB Hard Disk</span></td>
-                                                            <td class="amount">$1499.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="total-quantity" colspan="2"><strong>Total 8 Items</strong></td>
-                                                            <td class="total-amount"><strong>$1997.00</strong></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <div class="panel-body text-right">
-                                                        <a href="#" class="menu-shop-btn">View Cart</a>
-                                                        <a href="#" class="menu-shop-btn">Checkout</a>
-                                                    </div>
-                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -156,3 +125,6 @@
         </div>
     </div>
     <!-- Header navbar end -->
+
+  
+  

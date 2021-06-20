@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/home/css/style_1.css')?>">
     <!-- Start  bootstrap-touch-slider Slider -->
     <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
 
@@ -13,7 +14,7 @@
             <!-- Third Slide -->
             <div class="item active">
                 <!-- Slide Background -->
-                <img src="img/bg/3.jpg" alt="Slider Images"  class="slide-image"/>
+                <img src="<?php echo base_url('assets/home/img/bg/3.jpg')?>" alt="Slider Images"  class="slide-image"/>
                 <div class="bs-slider-overlay"></div>
 
                 <div class="slide-text slide_style_left">
@@ -28,7 +29,7 @@
             <!-- Second Slide -->
             <div class="item">            
                 <!-- Slide Background -->
-                <img src="img/bg/2.jpg" alt="Slider Images" class="slide-image"/>
+                <img src="assets/home/img/bg/2.jpg" alt="Slider Images" class="slide-image"/>
                 <div class="bs-slider-overlay"></div>
                 <!-- Slide Text Layer -->
                 <div class="slide-text slide_style_center">
@@ -43,7 +44,7 @@
             <!-- Third Slide -->
             <div class="item">            
                 <!-- Slide Background -->
-                <img src="img/bg/1.jpg" alt="Slider Images"  class="slide-image"/>
+                <img src="assets/home/img/bg/1.jpg" alt="Slider Images"  class="slide-image"/>
                 <div class="bs-slider-overlay"></div>
                 <!-- Slide Text Layer -->
                 <div class="slide-text slide_style_right">
@@ -78,7 +79,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon">
-                <img src="img/menu/1.png" class="menu">
+                <img src="assets/home/img/menu/1.png" class="menu">
                 <h5 style="color: white; text-align: center;">Get Appointment</h5>
                 <div class="line-border-center bg-gray margin-bottom-20"></div>
                 
@@ -89,7 +90,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon">
-                <img src="img/menu/2.png" class="menu">
+                <img src="<?php echo base_url('assets/home/img/menu/2.png')?>" class="menu">
                 <h5 style="color: white; text-align: center;">Talk To Nutritionist</h5>
                 <div class="line-border-center bg-gray margin-bottom-20"></div>
             </div>
@@ -99,17 +100,17 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon">
-                <img src="img/menu/4.png" class="menu">
+                <img src="<?php echo base_url('assets/home/img/menu/4.png')?>" class="menu">
                 <h5 style="color: white; text-align: center;">Get Nutrient Stuff</h5>
                 <div class="line-border-center bg-gray margin-bottom-20"></div>
             </div>
-              <p style="color:white; text-align: center;">Buy<br> Help and Support</p>
+              <p style="color:white; text-align: center;">Buy Your<br>Favorite Stuff</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon">
-                <img src="img/menu/3.png" class="menu">
+                <img src="assets/home/img/menu/3.png" class="menu">
                 <h5 style="color: white; text-align: center;">Need Any Help?</h5>
                 <div class="line-border-center bg-gray margin-bottom-20"></div>
             </div>
@@ -136,7 +137,7 @@
                     <div class="team-carousel">
                         <div class="item">
                             <div class="team-item-2">
-                                <img src="img/team/1.jpg" alt="" style="height: 300px;">
+                                <img src="assets/home/img/team/1.jpg" alt="" style="height: 300px;">
                                 <div class="team-contact">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -170,7 +171,7 @@
                         </div>
                         <div class="item">
                             <div class="team-item-2">
-                                <img src="img/team/2.jpeg" alt="" style="height: 300px;">
+                                <img src="assets/home/img/team/2.jpeg" alt="" style="height: 300px;">
                                 <div class="team-contact">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -204,7 +205,7 @@
                         </div>
                         <div class="item">
                             <div class="team-item-2">
-                                <img src="img/team/3.jpg" alt="" style="height: 300px;">
+                                <img src="assets/home/img/team/3.jpg" alt="" style="height: 300px;">
                                 <div class="team-contact">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -238,7 +239,7 @@
                         </div>
                         <div class="item">
                             <div class="team-item-2">
-                                <img src="img/team/4.png" alt="" style="height: 300px;">
+                                <img src="assets/home/img/team/4.png" alt="" style="height: 300px;">
                                 <div class="team-contact">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -272,7 +273,7 @@
                         </div>
                         <div class="item">
                             <div class="team-item-2">
-                                <img src="img/team/5.jpg" alt="" style="height: 300px;">
+                                <img src="assets/home/img/team/5.jpg" alt="" style="height: 300px;">
                                 <div class="team-contact">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -306,7 +307,7 @@
                         </div>
                         <div class="item">
                             <div class="team-item-2">
-                                <img src="img/team/6.jpg" alt="" style="height: 300px;">
+                                <img src="assets/home/img/team/6.jpg" alt="" style="height: 300px;">
                                 <div class="team-contact">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -347,7 +348,7 @@
 
     <!-- Product -->
     <section class="team-area">
-        <div class="container">
+        <div class="container" style="padding-top:10px;">
             <div class="section-title">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
@@ -363,7 +364,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="img/product/1.jpg" alt="IMG-PRODUCT">
+							<img src="assets/home/img/product/1.webp" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -373,18 +374,19 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Esprit Ruffle Shirt
+									Set Celemek & Topi Koki
 								</a>
 
 								<span class="stext-105 cl3">
-									RP.64.000
+									Rp.150.000
 								</span>
 							</div>
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="img/icon/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="img/icon/icon-heart-02.png" alt="ICON">
+									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">9.5K</p>
+                                    
+									
 								</a>
 							</div>
 						</div>
@@ -395,7 +397,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="images/product-02.jpg" alt="IMG-PRODUCT">
+							<img src="assets/home/img/product/2.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -405,18 +407,17 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Herschel supply
+									Pisau Dapur Set Utilitas Japan
 								</a>
 
 								<span class="stext-105 cl3">
-									$35.31
+									Rp.250.000
 								</span>
 							</div>
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+                                 <p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">8.7K</p>
 								</a>
 							</div>
 						</div>
@@ -427,7 +428,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="images/product-03.jpg" alt="IMG-PRODUCT">
+							<img src="assets/home/img/product/3.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -437,18 +438,17 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Only Check Trouser
+									Timbangan Dapur
 								</a>
 
 								<span class="stext-105 cl3">
-									$25.50
+									Rp.300.000
 								</span>
 							</div>
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">7.5K</p>
 								</a>
 							</div>
 						</div>
@@ -459,7 +459,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="images/product-04.jpg" alt="IMG-PRODUCT">
+							<img src="assets/home/img/product/4.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -469,18 +469,19 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Classic Trench Coat
+									Set Peralatan Masak Anti Lengket Karachi
 								</a>
 
 								<span class="stext-105 cl3">
-									$75.00
+									Rp.600.000
 								</span>
 							</div>
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">6.7K</p>
+                                       
+									
 								</a>
 							</div>
 						</div>
@@ -491,7 +492,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="images/product-05.jpg" alt="IMG-PRODUCT">
+							<img src="assets/home/img/product/5.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -501,18 +502,18 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Front Pocket Jumper
+									Kris Timbangan Digital
 								</a>
 
 								<span class="stext-105 cl3">
-									$34.75
+									Rp.200.000
 								</span>
 							</div>
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">5.6K</p>
+                                        
 								</a>
 							</div>
 						</div>
@@ -523,7 +524,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="images/product-06.jpg" alt="IMG-PRODUCT">
+							<img src="assets/home/img/product/6.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -533,18 +534,17 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Vintage Inspired Classic 
+                                    Microtoise Gea
 								</a>
 
 								<span class="stext-105 cl3">
-									$93.20
+									Rp.40.000
 								</span>
 							</div>
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">4.9K</p>
 								</a>
 							</div>
 						</div>
@@ -555,7 +555,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="images/product-07.jpg" alt="IMG-PRODUCT">
+							<img src="assets/home/img/product/7.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -565,18 +565,18 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Shirt in Stretch Cotton
+									Paket Alat Laboratorium (Basic)
 								</a>
 
 								<span class="stext-105 cl3">
-									$52.66
+									Rp.100.000
 								</span>
 							</div>
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">3.8K</p>
+									
 								</a>
 							</div>
 						</div>
@@ -587,7 +587,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="images/product-08.jpg" alt="IMG-PRODUCT">
+							<img src="assets/home/img/product/8.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -597,18 +597,18 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Pieces Metallic Printed
+									Tote Bag I'm Nutritisionist
 								</a>
 
 								<span class="stext-105 cl3">
-									$18.96
+									Rp.50.000
 								</span>
 							</div>
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">2.5K</p>
+									
 								</a>
 							</div>
 						</div>
@@ -618,94 +618,12 @@
 
     <!-- Testimonial start -->
     <section class="testimonial">
-        <div class="container">
+    <div class="container">
             <div class="section-title">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
-                        <h2>Our <span class="color-defult"> Clients</span> Say</h2>
+                        <h2 style="padding-top:45px;">Latest <span class="color-defult">news</span></h2>
                         <div class="line-border-center bg-defult"></div>
-                        <p>Repellendus error placeat numquam doloribus perferendis consequatur maxime molestiae soluta Corporis quidem quaerat accusantium omnis repudiandae nulla recusandae</p>
-                    </div>
-                </div>
-            </div>
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="testimonial-carousel-one">
-                            <div class="item">
-                                <div class="testimonial-item text-center">
-                                    <div class="testimonial-author">
-                                        <div class="author-img">
-                                            <img class="img-responsive" src="img/testimonial/1.png" alt="" />
-                                        </div>
-                                        <h4>John Daniel</h4>
-                                        <h6>business man</h6>
-                                        <ul>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        </ul>
-                                    </div>
-                                    <p>consectetur adipisicing elit. Nemo ex doloremque maiores quas, cumque commodi eaque molestiae in ratione nam obcaecati nihil provident illum eius sed ullam amet, expedita molestias iusto.</p> 
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonial-item text-center">
-                                    <div class="testimonial-author">
-                                        <div class="author-img">
-                                            <img class="img-responsive" src="img/testimonial/2.png" alt="" />
-                                        </div>
-                                        <h4>John Daniel</h4>
-                                        <h6>business man</h6>
-                                        <ul>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        </ul>
-                                    </div>
-                                    <p>consectetur adipisicing elit. Nemo ex doloremque maiores quas, cumque commodi eaque molestiae in ratione nam obcaecati nihil provident illum eius sed ullam amet, expedita molestias iusto.</p> 
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonial-item text-center">
-                                    <div class="testimonial-author">
-                                        <div class="author-img">
-                                            <img class="img-responsive" src="img/testimonial/3.png" alt="" />
-                                        </div>
-                                        <h4>John Daniel</h4>
-                                        <h6>business man</h6>
-                                        <ul>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        </ul>
-                                    </div>
-                                    <p>consectetur adipisicing elit. Nemo ex doloremque maiores quas, cumque commodi eaque molestiae in ratione nam obcaecati nihil provident illum eius sed ullam amet, expedita molestias iusto.</p> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonial end -->
-    
-   <!-- blog start -->
-    <section class="blog-area bg-f8">
-        <div class="container">
-            <div class="section-title">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center">
-                        <h2>Latest <span class="color-defult">news</span></h2>
-                        <div class="line-border-center bg-defult"></div>
-                        <p>Repellendus error placeat numquam doloribus perferendis consequatur maxime molestiae soluta Corporis quidem quaerat accusantium omnis repudiandae nulla recusandae</p>
                     </div>
                 </div>
             </div>
@@ -717,16 +635,16 @@
                                 <div class="blog-date text-center">
                                     <i class="pe-7s-link"></i>
                                 </div>
-                                <div class="blog-img"><a href="#"><img src="img/blog/1.jpg" alt=""></a>
+                                <div class="blog-img"><a href="#"><img src="assets/home/img/blog/1.jpg" alt=""></a>
                                     <div class="blog-event-date">
-                                        <h3>13 <small>Jun</small></h3>
+                                        <h3>13 <small>June</small></h3>
                                     </div>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="#"><h4>What's the Right Choice? </h4></a>
+                                    <a href="#"><h4>Atasi Stunting, Kemendikbud Ristek Gelontor Dana Rp 27 Miliar</h4></a>
                                     <i class="fa fa-user-o"></i> <a href="#">Admin</a> | <i class="fa fa-heart-o"></i> <a href="#">Like :20 </a> | <i class="fa fa-comment-o"></i><a href="#"> Comments: 10</a>
-                                    <p>come from a family of doctors and I was suffering from morbid obesity with co-morbidities like diabetes, hypertension, and sleep apnoea.</p>
-                                    <a href="#" class="btn btn-simple">Read More</a>
+                                    <p>Kemendikbud Ristek, melalui Direktorat PAUD menggelontorkan anggaran Rp 27 miliar untuk mengatasi stunting.</p>
+                                    <a href="https://www.kompas.com/edu/read/2021/06/13/125446571/atasi-stunting-kemendikbud-ristek-gelontor-dana-rp-27-miliar" class="btn btn-simple">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -735,16 +653,16 @@
                                 <div class="blog-date text-center">
                                     <i class="pe-7s-link"></i>
                                 </div>
-                                <div class="blog-img"><a href="#"><img src="img/blog/2.jpg" alt=""></a>
+                                <div class="blog-img"><a href="#"><img src="assets/home/img/blog/2.jpg" alt=""></a>
                                     <div class="blog-event-date">
-                                        <h3>17 <small>Jun</small></h3>
+                                        <h3>5 <small>June</small></h3>
                                     </div>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="#"><h4>Caregiver Series </h4></a>
+                                    <a href="#"><h4>Susu Bikin Gemuk, Mitos atau Fakta? ini Penjelasan Pakar Gizi Undip </h4></a>
                                     <i class="fa fa-user-o"></i> <a href="#">Admin</a> | <i class="fa fa-heart-o"></i> <a href="#">Like :20 </a> | <i class="fa fa-comment-o"></i><a href="#"> Comments: 10</a>
-                                    <p>come from a family of doctors and I was suffering from morbid obesity with co-morbidities like diabetes, hypertension, and sleep apnoea.</p>
-                                    <a href="#" class="btn btn-simple">Read More</a>
+                                    <p>Susu bikin gemuk, ini mitos atau fakta? Pakar gizi Undip menjelaskan pentingnya minum susu untuk tubuh manusia.</p>
+                                    <a href="https://www.kompas.com/edu/read/2021/06/05/074338271/susu-bikin-gemuk-mitos-atau-fakta-ini-penjelasan-pakar-gizi-undip" class="btn btn-simple">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -753,16 +671,16 @@
                                 <div class="blog-date text-center">
                                     <i class="pe-7s-link"></i>
                                 </div>
-                                <div class="blog-img"><a href="#"><img src="img/blog/3.jpg" alt=""></a>
+                                <div class="blog-img"><a href="#"><img src="assets/home/img/blog/4.jpg" alt=""></a>
                                     <div class="blog-event-date">
-                                        <h3>19 <small>Jun</small></h3>
+                                        <h3>7 <small>Jun</small></h3>
                                     </div>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="#"><h4>Little Hats, Big Hearts </h4></a>
+                                    <a href="#"><h4>[HOAKS] Rendaman Nanas dan Air Panas Bisa Membunuh Sel Kanker </h4></a>
                                     <i class="fa fa-user-o"></i> <a href="#">Admin</a> | <i class="fa fa-heart-o"></i> <a href="#">Like :20 </a> | <i class="fa fa-comment-o"></i><a href="#"> Comments: 10</a>
-                                    <p>come from a family of doctors and I was suffering from morbid obesity with co-morbidities like diabetes, hypertension, and sleep apnoea.</p>
-                                    <a href="#" class="btn btn-simple">Read More</a>
+                                    <p>Penyakit dan sel kanker, menurut Inge, tidak bisa sembuh begitu saja karena mengkonsumsi nanas atau makanan lainnya.</p>
+                                    <a href="https://www.kompas.com/tren/read/2021/06/07/123000165/hoaks-rendaman-nanas-dan-air-panas-bisa-membunuh-sel-kanker" class="btn btn-simple">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -771,6 +689,8 @@
             </div>
         </div>
     </section>
-   <!-- blog end -->
+    <!-- Testimonial end -->
+    
+   
 
     

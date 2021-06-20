@@ -6,6 +6,9 @@ class halu extends MY_Controller {
 	
 	function index(){
 		$this->load->view('header');
+		$this->load->view('v_halu');
+		$this->load->view('footer');
+		
 		
        
     }
