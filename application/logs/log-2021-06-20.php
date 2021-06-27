@@ -1792,3 +1792,7 @@ ERROR - 2021-06-20 14:08:20 --> Severity: error --> Exception: syntax error, une
 ERROR - 2021-06-20 14:08:21 --> Severity: error --> Exception: syntax error, unexpected end of file C:\xampp\htdocs\Yessnut\application\modules\login\controllers\login.php 27
 ERROR - 2021-06-20 14:08:21 --> Severity: error --> Exception: syntax error, unexpected end of file C:\xampp\htdocs\Yessnut\application\modules\login\controllers\login.php 27
 ERROR - 2021-06-20 14:10:14 --> Severity: error --> Exception: syntax error, unexpected end of file C:\xampp\htdocs\Yessnut\application\modules\login\controllers\login.php 27
+ERROR - 2021-06-20 23:47:40 --> Severity: error --> Exception: syntax error, unexpected end of file C:\xampp\htdocs\Yessnut\application\modules\login\controllers\login.php 27
+ERROR - 2021-06-20 23:57:52 --> Severity: error --> Exception: syntax error, unexpected end of file C:\xampp\htdocs\Yessnut\application\modules\login\controllers\login.php 27
+ERROR - 2021-06-20 23:58:32 --> Severity: error --> Exception: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) C:\xampp\htdocs\Yessnut\application\modules\login\controllers\login.php 28
+ERROR - 2021-06-20 23:58:43 --> Severity: error --> Exception: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) C:\xampp\htdocs\Yessnut\application\modules\login\controllers\login.php 28

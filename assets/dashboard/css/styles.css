@@ -1,0 +1,50 @@
+#patient {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #patient td, #patient th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #patient tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #patient tr:hover {background-color: #ddd;}
+  
+  #patient th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color:white;
+    color:#64C5B1;
+  }
+  .main__cards_1 {
+    display: grid;
+    grid-template-columns: 4fr;
+    gap: 30px;
+    margin: 20px 0;
+  }
+  
+  .card_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+  }
+  
+  .card_inner_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card_inner_1 > span {
+    font-size: 25px;
+  }
+  

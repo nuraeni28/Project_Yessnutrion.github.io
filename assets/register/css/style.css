@@ -7,14 +7,18 @@
 .login{
     background:cadetblue;
 }
+body {
 
-.inp1{
-    border: none;
-    outline: none;
-    border-bottom: 1px solid gray;
-    width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
 }
 
 .icon{
     position: absolute;
 }
+
+.container {
+    padding: 16px;
+    background-color: white;
+  }
+  
