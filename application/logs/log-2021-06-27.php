@@ -214,3 +214,7 @@ ERROR - 2021-06-27 14:02:35 --> 404 Page Not Found: /index
 ERROR - 2021-06-27 14:02:36 --> 404 Page Not Found: /index
 ERROR - 2021-06-27 14:02:40 --> 404 Page Not Found: ../modules/dashboard/controllers/Dashboard/assets
 ERROR - 2021-06-27 14:02:40 --> 404 Page Not Found: ../modules/dashboard/controllers/Dashboard/script.js
+ERROR - 2021-06-27 14:17:29 --> 404 Page Not Found: /index
+ERROR - 2021-06-27 14:17:29 --> 404 Page Not Found: /index
+ERROR - 2021-06-27 14:31:18 --> 404 Page Not Found: /index
+ERROR - 2021-06-27 14:31:21 --> 404 Page Not Found: /index

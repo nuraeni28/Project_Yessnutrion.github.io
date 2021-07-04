@@ -1,225 +1,359 @@
+<!--
+=========================================================
+* Argon Dashboard - v1.2.0
+=========================================================
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+
+
+* Copyright  Creative Tim (http://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+
+
+=========================================================
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/dashboard/css/styles.css" />
-    <link rel="stylesheet" href="assets/dashboard/css/color.css" />
-    <script src="https://kit.fontawesome.com/a0fa40e485.js" crossorigin="anonymous"></script>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>DASHBOARD</title>
+  <script src="https://kit.fontawesome.com/a0fa40e485.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">   
-    <title>DASHBOARD</title>
-  </head>
-  <body id="body">
-    <div class="container">
-      <nav class="navbar">
-        <div class="nav_icon" onclick="toggleSidebar()">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
-        <div class="navbar__left">
-          <a class="active_link" href="#">Admin</a>
-        </div>
-        <div class="navbar__right">
-          <a href="#">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-          </a>
-          <a href="#">
-            <img width="30" src="assets/dashboard/avatar.svg" alt="" />
-            <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
-          </a>
-        </div>
-      </nav>
+  <!-- Favicon -->
+  <link rel="icon" href="<?= base_url('assets/dashboard/img/brand/favicon.png')?>" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">  
+  <!-- Icons -->
+  <link rel="stylesheet" href="<?= base_url('assets/dashboard/vendor/nucleo/css/nucleo.css')?>" type="text/css">
+  <link rel="stylesheet" href="<?= base_url('assets/dashboard/vendor/@fortawesome/fontawesome-free/css/all.min.css')?>" type="text/css">
+  <!-- Page plugins -->
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="<?= base_url('assets/dashboard/css/argon.css?v=1.2.0')?>" type="text/css">
+</head>
 
-      <main>
-        <div class="main__container">
-          <!-- MAIN TITLE STARTS HERE -->
-
-          <div class="main__title">
-            <img src="assets/hello.svg" alt="" />
-            <div class="main__greeting">
-              <h1>Hello Nuraeni</h1>
-              <p>Welcome to your admin dashboard</p>
-            </div>
-          </div>
-
-          <!-- MAIN TITLE ENDS HERE -->
-
-          <!-- MAIN CARDS STARTS HERE -->
-          <div class="main__cards">
-            <div class="card">
-              <i
-                class="fas fa-hospital-user fa-2x text-lightblue"
-                aria-hidden="true"
-              ></i>
-              <div class="card_inner">
-                <p class="text-primary-p">Number of Patients</p>
-                <span class="font-bold text-title">578</span>
-              </div>
-            </div>
-
-            <div class="card">
-              <i class="fa fa-calendar fa-2x text-red" aria-hidden="true"></i>
-              <div class="card_inner">
-                <p class="text-primary-p">Times of Watching</p>
-                <span class="font-bold text-title">2467</span>
-              </div>
-            </div>
-
-            <div class="card">
-              <i
-                class="fa fa-video-camera fa-2x text-yellow"
-                aria-hidden="true"
-              ></i>
-              <div class="card_inner">
-                <p class="text-primary-p">Number of Videos</p>
-                <span class="font-bold text-title">340</span>
-              </div>
-            </div>
-
-            <div class="card">
-              <i
-                class="fa fa-thumbs-up fa-2x text-green"
-                aria-hidden="true"
-              ></i>
-              <div class="card_inner">
-                <p class="text-primary-p">Number of Likes</p>
-                <span class="font-bold text-title">645</span>
-              </div>
-            </div>
-          </div>
-          <!-- MAIN CARDS ENDS HERE -->
-
-          <!-- CHARTS STARTS HERE -->
-          <div class="charts">
-            <div class="charts__left">
-              <div class="charts__left__title">
-                <div>
-                  <h1>Daily Reports</h1>
-                  <p>Cupertino, California, USA</p>
+<body>
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs" id="sidenav-main" style="background-color: #64C5B1;">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header  align-items-center">
+        <a class="navbar-brand" href="javascript:void(0)">
+        <h1 style="font-family: 'Viaoda Libre', cursive; padding-top:20px;">YESS<span style="color: red;">NUTRION!</h1>
+        </a>
+      </div>
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="<?= base_url('dashboard/patient')?>">
+                <i class="fas fa-hospital-user text-gray"></i>
+                <span class="nav-link-text">Patient Management</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="examples/icons.html">
+                <i class="fas fa-user-md text-blue"></i>
+                <span class="nav-link-text">Nutrition Management</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="examples/map.html">
+                <i class="ni ni-pin-3 text-primary"></i>
+                <span class="nav-link-text">Google</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="examples/profile.html">
+                <i class="ni ni-single-02 text-yellow"></i>
+                <span class="nav-link-text">Profile</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="examples/tables.html">
+                <i class="ni ni-bullet-list-67 text-default"></i>
+                <span class="nav-link-text">Tables</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="examples/login.html">
+                <i class="ni ni-key-25 text-info"></i>
+                <span class="nav-link-text">Login</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="examples/register.html">
+                <i class="ni ni-circle-08 text-pink"></i>
+                <span class="nav-link-text">Register</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="examples/upgrade.html">
+                <i class="ni ni-send text-dark"></i>
+                <span class="nav-link-text">Upgrade</span>
+              </a>
+            </li>
+          
+  </nav>
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <!-- Topnav -->
+    <nav class="navbar navbar-top navbar-expand  border-bottom" style="background:white;">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Search form -->
+          <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+            <div class="form-group mb-0">
+              <div class="input-group input-group-alternative input-group-merge">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
                 </div>
-                <i class="fa fa-usd" aria-hidden="true"></i>
+                <input class="form-control" placeholder="Search" type="text">
               </div>
-              <div id="apex1"></div>
             </div>
-
-            <div class="charts__right">
-              <div class="charts__right__title">
-                <div>
-                  <h1>Stats Reports</h1>
-                  <p>Cupertino, California, USA</p>
-                </div>
-                <i class="fa fa-usd" aria-hidden="true"></i>
-              </div>
-
-              <div class="charts__right__cards">
-                <div class="card1">
-                  <h1>Income</h1>
-                  <p>$75,300</p>
-                </div>
-
-                <div class="card2">
-                  <h1>Sales</h1>
-                  <p>$124,200</p>
-                </div>
-
-                <div class="card3">
-                  <h1>Users</h1>
-                  <p>3900</p>
-                </div>
-
-                <div class="card4">
-                  <h1>Orders</h1>
-                  <p>1881</p>
+            <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </form>
+          <!-- Navbar links -->
+          <ul class="navbar-nav align-items-center  ml-md-auto ">
+            <li class="nav-item d-xl-none">
+              <!-- Sidenav toggler -->
+              <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- CHARTS ENDS HERE -->
-        </div>
-      </main>
-
-      <div id="sidebar" style="background-color: #64C5B1;">
-        <div class="sidebar__title">
-          <div class="sidebar__img">
-            <h1 style="font-family: 'Viaoda Libre', cursive; padding-top:20px;">YESS<span style="color: red;">NUTRION!</h1>
-          </div>
-          <i
-            onclick="closeSidebar()"
-            class="fa fa-times"
-            id="sidebarIcon"
-            aria-hidden="true"
-          ></i>
-        </div>
-
-        <div class="sidebar__menu">
-          <div class="sidebar__link active_menu_link">
-            <i class="fa fa-home"></i>
-            <a href="#">Dashboard</a>
-          </div>
-          <h2>MNG</h2>
-          <div class="sidebar__link">
-            <i class="fas fa-hospital-user"></i>
-            <a href="#">Patient Management</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-building-o"></i>
-            <a href="#">Company Management</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-wrench"></i>
-            <a href="#">Employee Management</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-archive"></i>
-            <a href="#">Warehouse</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-handshake-o"></i>
-            <a href="#">Contracts</a>
-          </div>
-          <h2>LEAVE</h2>
-          <div class="sidebar__link">
-            <i class="fa fa-question"></i>
-            <a href="#">Requests</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-sign-out"></i>
-            <a href="#">Leave Policy</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-calendar-check-o"></i>
-            <a href="#">Special Days</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-files-o"></i>
-            <a href="#">Apply for leave</a>
-          </div>
-          <h2>PAYROLL</h2>
-          <div class="sidebar__link">
-            <i class="fa fa-money"></i>
-            <a href="#">Payroll</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-briefcase"></i>
-            <a href="#">Paygrade</a>
-          </div>
-          <div class="sidebar__logout">
-            <i class="fa fa-power-off"></i>
-            <a href="#">Log out</a>
-          </div>
+            </li>
+            <li class="nav-item d-sm-none">
+              <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+                <i class="ni ni-zoom-split-in"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ni ni-bell-55"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
+                <!-- Dropdown header -->
+                <div class="px-3 py-3">
+                  <h6 class="text-sm text-muted m-0">You have <strong class="text-primary">13</strong> notifications.</h6>
+                </div>
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="<?= base_url('assets/dashboard/img/theme/team-1.jpg')?>" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">Nuraeni</h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>2 hrs ago</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="assets/img/theme/team-2.jpg" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">John Snow</h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>3 hrs ago</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="assets/img/theme/team-3.jpg" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">John Snow</h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>5 hrs ago</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">Your posts have been liked a lot.</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="assets/img/theme/team-4.jpg" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">Nuraeni</h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>2 hrs ago</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="assets/img/theme/team-5.jpg" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">John Snow</h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>3 hrs ago</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- View all -->
+                <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ni ni-ungroup"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default  dropdown-menu-right ">
+                <div class="row shortcuts px-4">
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-red">
+                      <i class="ni ni-calendar-grid-58"></i>
+                    </span>
+                    <small>Calendar</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-orange">
+                      <i class="ni ni-email-83"></i>
+                    </span>
+                    <small>Email</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-info">
+                      <i class="ni ni-credit-card"></i>
+                    </span>
+                    <small>Payments</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-green">
+                      <i class="ni ni-books"></i>
+                    </span>
+                    <small>Reports</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-purple">
+                      <i class="ni ni-pin-3"></i>
+                    </span>
+                    <small>Maps</small>
+                  </a>
+                  <a href="#!" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-yellow">
+                      <i class="ni ni-basket"></i>
+                    </span>
+                    <small>Shop</small>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+            <li class="nav-item dropdown">
+              <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media align-items-center">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <img alt="Image placeholder" src="<?= base_url('assets/dashboard/img/2.png')?>">
+                  </span>
+                  <div class="media-body  ml-2  d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">Nuraeni</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu  dropdown-menu-right ">
+                <div class="dropdown-header noti-title">
+                  <h6 class="text-overflow m-0">Welcome!</h6>
+                </div>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-single-02"></i>
+                  <span>My profile</span>
+                </a>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-settings-gear-65"></i>
+                  <span>Settings</span>
+                </a>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-calendar-grid-58"></i>
+                  <span>Activity</span>
+                </a>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-support-16"></i>
+                  <span>Support</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-user-run"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="script.js"></script>
-  </body>
+    </nav>
+    
+      
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <script src="<?= base_url('assets/dashboard/vendor/jquery/dist/jquery.min.js')?>"></script>
+  <script src="<?= base_url('assets/dashboard/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')?>"></script>
+  <script src="<?= base_url('assets/dashboard/vendor/js-cookie/js.cookie.js')?>"></script>
+  <script src="<?= base_url('assets/dashboard/vendor/jquery.scrollbar/jquery.scrollbar.min.js')?>"></script>
+  <script src="<?= base_url('assets/dashboard/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js')?>"></script>
+  <!-- Optional JS -->
+  <script src="<?= base_url('assets/dashboard/vendor/chart.js/dist/Chart.min.js')?>"></script>
+  <script src="<?= base_url('assets/dashboard/vendor/chart.js/dist/Chart.extension.js')?>"></script>
+  <!-- Argon JS -->
+  <script src="<?= base_url('assets/dashboard/js/argon.js?v=1.2.0')?>"></script>
+</body>
+
 </html>

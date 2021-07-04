@@ -35,7 +35,7 @@ class login extends MY_Controller {
                         </script>";
             } else {
                 echo "<script>
-                        alert('Congratulations, login failed');
+                        alert('Sorry, login failed');
                         window.location='".site_url('login')."';
                         </script>";
             }

@@ -9,8 +9,7 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="<?= base_url('assets/dashboard/css/style.css')?>" />
-    <link rel="stylesheet" href="<?= base_url('assets/dashboard/css/side.css')?>" />
+  
     <link rel="stylesheet" href="<?= base_url('assets/dashboard/css/patient.css')?>" />
     
     
@@ -22,51 +21,17 @@
     
     <title>DASHBOARD</title>
   </head>
-  <body id="body">
-      <style>
-    .button {
-    border: none;
-    color: white;
-    padding: 5px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
  
-  }
-      </style>
-    <div class="container">
-      <nav class="navbar">
-        <div class="nav_icon" onclick="toggleSidebar()">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
-        <div class="navbar__left">
-          <a class="active_link" href="#">Admin</a>
-        </div>
-        <div class="navbar__right">
-          <a href="#">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-          </a>
-          <a href="#">
-            <img width="30" src="assets/avatar.svg" alt="" />
-            <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
-          </a>
-        </div>
-      </nav>
 
       <main>
         <div class="main__container">
           <!-- MAIN TITLE STARTS HERE -->
 
           <div class="main__title">
-            <i class="fas fa-hospital-user fa-2x text-lightblue" aria-hidden="true"></i>
             <div class="main__greeting">
-              <h1>Patients Data</h1>
+              <h1 style="padding-top:20px;padding-left:20px;">Patients Data
+              <small>(Pasien)</small>
+              </h1>
             </div>
           </div>
 
@@ -76,11 +41,10 @@
           <div class="main__cards_1">
             <div class="card_1">
               <div class="card_inner_1s">
+              <div class="pull-right">
+            <a href="<?= base_url('dashboard/add')?>" class="btn btn-success btn-flat" style="margin-bottom:20px;"><i class="fa fa-user-plus"></i>Create</a>
+            </div>
                 <table id="patient">
-                <?php
-                  if(!$this->session->flashdata('Info') == ''){
-                    echo $this->session->flashdata('Info');
-                  } ?>
                     <thead>
                         <tr>
                           <th scope="col">No</th>
@@ -104,8 +68,8 @@
                         <td><?= $data->email ?></td>
                          <td><?= $data->username ?></td>
                          <td class="text-center">
-                         <a href="" class="button" style="background-color:#008CBA;"> <i class="fa fa-pencil"></i> Update</a>
-                         <a href="" class="button" style="background-color:#f44336;"> <i class="fa fa-trash"></i> Delete</a>
+                         <a href="" class="btn btn-primary btn-xs"> <i class="fa fa-pencil"></i> Update</a>
+                         <a href=""class="btn btn-danger btn-xs"> <i class="fa fa-trash"></i> Delete</a>
                          </td> 
 
 
@@ -118,80 +82,5 @@
         </div>
       </main>
 
-      <div id="sidebar" style="background-color: #64C5B1;">
-        <div class="sidebar__title">
-          <div class="sidebar__img">
-            <h1 style="font-family: 'Viaoda Libre', cursive; padding-top:20px;">YESS<span style="color: red;">NUTRION!</h1>
-          </div>
-          <i
-            onclick="closeSidebar()"
-            class="fa fa-times"
-            id="sidebarIcon"
-            aria-hidden="true"
-          ></i>
-        </div>
-
-        <div class="sidebar__menu">
-          <div class="sidebar__link active_menu_link">
-            <i class="fa fa-home"></i>
-            <a href="#">Dashboard</a>
-          </div>
-          <h2>MNG</h2>
-          <div class="sidebar__link">
-            <i class="fas fa-hospital-user"></i>
-            <a href="#">Patient Management</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-building-o"></i>
-            <a href="#">Company Management</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-wrench"></i>
-            <a href="#">Employee Management</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-archive"></i>
-            <a href="#">Warehouse</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-handshake-o"></i>
-            <a href="#">Contracts</a>
-          </div>
-          <h2>LEAVE</h2>
-          <div class="sidebar__link">
-            <i class="fa fa-question"></i>
-            <a href="#">Requests</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-sign-out"></i>
-            <a href="#">Leave Policy</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-calendar-check-o"></i>
-            <a href="#">Special Days</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-files-o"></i>
-            <a href="#">Apply for leave</a>
-          </div>
-          <h2>PAYROLL</h2>
-          <div class="sidebar__link">
-            <i class="fa fa-money"></i>
-            <a href="#">Payroll</a>
-          </div>
-          <div class="sidebar__link">
-            <i class="fa fa-briefcase"></i>
-            <a href="#">Paygrade</a>
-          </div>
-          <div class="sidebar__logout">
-            <i class="fa fa-power-off"></i>
-            <a href="#">Log out</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
