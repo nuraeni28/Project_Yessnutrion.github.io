@@ -29,7 +29,7 @@
             <!-- Second Slide -->
             <div class="item">            
                 <!-- Slide Background -->
-                <img src="assets/home/img/bg/2.jpg" alt="Slider Images" class="slide-image"/>
+                <img src="<?= base_url('assets/home/img/bg/2.jpg')?>" alt="Slider Images" class="slide-image"/>
                 <div class="bs-slider-overlay"></div>
                 <!-- Slide Text Layer -->
                 <div class="slide-text slide_style_center">
@@ -44,7 +44,7 @@
             <!-- Third Slide -->
             <div class="item">            
                 <!-- Slide Background -->
-                <img src="assets/home/img/bg/1.jpg" alt="Slider Images"  class="slide-image"/>
+                <img src="<?= base_url('assets/home/img/bg/1.jpg')?>" alt="Slider Images"  class="slide-image"/>
                 <div class="bs-slider-overlay"></div>
                 <!-- Slide Text Layer -->
                 <div class="slide-text slide_style_right">
@@ -79,7 +79,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon">
-                <img src="assets/home/img/menu/1.png" class="menu">
+                <img src="<?= base_url('assets/home/img/menu/1.png')?>" class="menu">
                 <h5 style="color: white; text-align: center;">Get Appointment</h5>
                 <div class="line-border-center bg-gray margin-bottom-20"></div>
                 
@@ -110,7 +110,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon">
-                <img src="assets/home/img/menu/3.png" class="menu">
+                <img src="<?= base_url('assets/home/img/menu/3.png')?>" class="menu">
                 <h5 style="color: white; text-align: center;">Need Any Help?</h5>
                 <div class="line-border-center bg-gray margin-bottom-20"></div>
             </div>
@@ -137,7 +137,7 @@
                     <div class="team-carousel">
                         <div class="item">
                             <div class="team-item-2">
-                                <img src="assets/home/img/team/1.jpg" alt="" style="height: 300px;">
+                                <img src="<?=base_url('assets/home/img/team/1.jpg')?>" alt="" style="height: 300px;">
                                 <div class="team-contact">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -171,7 +171,7 @@
                         </div>
                         <div class="item">
                             <div class="team-item-2">
-                                <img src="assets/home/img/team/2.jpeg" alt="" style="height: 300px;">
+                                <img src="<?= base_url('assets/home/img/team/2.jpeg')?>" alt="" style="height: 300px;">
                                 <div class="team-contact">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -205,7 +205,7 @@
                         </div>
                         <div class="item">
                             <div class="team-item-2">
-                                <img src="assets/home/img/team/3.jpg" alt="" style="height: 300px;">
+                                <img src="<?= base_url('assets/home/img/team/3.jpg')?>" alt="" style="height: 300px;">
                                 <div class="team-contact">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -239,7 +239,7 @@
                         </div>
                         <div class="item">
                             <div class="team-item-2">
-                                <img src="assets/home/img/team/4.png" alt="" style="height: 300px;">
+                                <img src="<?= base_url('assets/home/img/team/4.png')?>" alt="" style="height: 300px;">
                                 <div class="team-contact">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -273,7 +273,7 @@
                         </div>
                         <div class="item">
                             <div class="team-item-2">
-                                <img src="assets/home/img/team/5.jpg" alt="" style="height: 300px;">
+                                <img src="<?= base_url('assets/home/img/team/5.jpg')?>" alt="" style="height: 300px;">
                                 <div class="team-contact">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -307,7 +307,7 @@
                         </div>
                         <div class="item">
                             <div class="team-item-2">
-                                <img src="assets/home/img/team/6.jpg" alt="" style="height: 300px;">
+                                <img src="<?= base_url('assets/home/img/team/6.jpg')?>" alt="" style="height: 300px;">
                                 <div class="team-contact">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -364,7 +364,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="assets/home/img/product/1.webp" alt="IMG-PRODUCT">
+							<img src="<?= base_url('assets/home/img/product/1.webp')?>" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -397,7 +397,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="assets/home/img/product/2.jpg" alt="IMG-PRODUCT">
+							<img src="<?= base_url('assets/home/img/product/2.jpg')?>" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -417,7 +417,7 @@
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-                                 <p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">8.7K</p>
+                                 <p><img class="icon-heart1 dis-block trans-04" src="<?= base_url('assets/home/img/icon/icon-heart-02.png')?>" alt="ICON">8.7K</p>
 								</a>
 							</div>
 						</div>
@@ -428,7 +428,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="assets/home/img/product/3.jpg" alt="IMG-PRODUCT">
+							<img src="<?= base_url('assets/home/img/product/3.jpg')?>" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -448,7 +448,7 @@
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">7.5K</p>
+									<p><img class="icon-heart1 dis-block trans-04" src="<?= base_url('assets/home/img/icon/icon-heart-02.png')?>" alt="ICON">7.5K</p>
 								</a>
 							</div>
 						</div>
@@ -459,7 +459,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="assets/home/img/product/4.jpg" alt="IMG-PRODUCT">
+							<img src="<?= base_url('assets/home/img/product/4.jpg')?>" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -479,9 +479,7 @@
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">6.7K</p>
-                                       
-									
+									<p><img class="icon-heart1 dis-block trans-04" src="<?= base_url('assets/home/img/icon/icon-heart-02.png')?>" alt="ICON">6.7K</p>
 								</a>
 							</div>
 						</div>
@@ -492,7 +490,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="assets/home/img/product/5.jpg" alt="IMG-PRODUCT">
+							<img src="<?= base_url('assets/home/img/product/5.jpg')?>" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -512,7 +510,7 @@
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">5.6K</p>
+									<p><img class="icon-heart1 dis-block trans-04" src="<?= base_url('assets/home/img/icon/icon-heart-02.png')?>" alt="ICON">5.6K</p>
                                         
 								</a>
 							</div>
@@ -524,7 +522,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="assets/home/img/product/6.jpg" alt="IMG-PRODUCT">
+							<img src="<?= base_url('assets/home/img/product/6.jpg')?>" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -544,7 +542,7 @@
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">4.9K</p>
+									<p><img class="icon-heart1 dis-block trans-04" src="<?= base_url('assets/home/img/icon/icon-heart-02.png')?>" alt="ICON">4.9K</p>
 								</a>
 							</div>
 						</div>
@@ -555,7 +553,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="assets/home/img/product/7.jpg" alt="IMG-PRODUCT">
+							<img src="<?= base_url('assets/home/img/product/7.jpg')?>" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -575,7 +573,7 @@
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">3.8K</p>
+									<p><img class="icon-heart1 dis-block trans-04" src="<?= base_url('assets/home/img/icon/icon-heart-02.png')?>" alt="ICON">3.8K</p>
 									
 								</a>
 							</div>
@@ -587,7 +585,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="assets/home/img/product/8.jpg" alt="IMG-PRODUCT">
+							<img src="<?= base_url('assets/home/img/product/8.jpg')?>" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -607,7 +605,7 @@
 
 							<div class="block2-txt-child2 flex-r p-t-3">
 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<p><img class="icon-heart1 dis-block trans-04" src="assets/home/img/icon/icon-heart-02.png" alt="ICON">2.5K</p>
+									<p><img class="icon-heart1 dis-block trans-04" src="<?= base_url('assets/home/img/icon/icon-heart-02.png')?>" alt="ICON">2.5K</p>
 									
 								</a>
 							</div>
@@ -635,7 +633,7 @@
                                 <div class="blog-date text-center">
                                     <i class="pe-7s-link"></i>
                                 </div>
-                                <div class="blog-img"><a href="#"><img src="assets/home/img/blog/1.jpg" alt=""></a>
+                                <div class="blog-img"><a href="#"><img src="<?= base_url('assets/home/img/blog/1.jpg')?>" alt=""></a>
                                     <div class="blog-event-date">
                                         <h3>13 <small>June</small></h3>
                                     </div>
@@ -653,7 +651,7 @@
                                 <div class="blog-date text-center">
                                     <i class="pe-7s-link"></i>
                                 </div>
-                                <div class="blog-img"><a href="#"><img src="assets/home/img/blog/2.jpg" alt=""></a>
+                                <div class="blog-img"><a href="#"><img src="<?= base_url('assets/home/img/blog/2.jpg')?>" alt=""></a>
                                     <div class="blog-event-date">
                                         <h3>5 <small>June</small></h3>
                                     </div>
@@ -671,7 +669,7 @@
                                 <div class="blog-date text-center">
                                     <i class="pe-7s-link"></i>
                                 </div>
-                                <div class="blog-img"><a href="#"><img src="assets/home/img/blog/4.jpg" alt=""></a>
+                                <div class="blog-img"><a href="#"><img src="<?= base_url('assets/home/img/blog/4.jpg')?>" alt=""></a>
                                     <div class="blog-event-date">
                                         <h3>7 <small>Jun</small></h3>
                                     </div>

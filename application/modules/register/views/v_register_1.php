@@ -85,8 +85,7 @@
 						<select name="as" id="sebagai" class="form-control">
 							<option value="1">Patient</option>
 							<option value="2">Nutrition</option>
-							<option value="3" >Customer</option>
-							<option value="4">Seller</option>
+							<option value="3">Seller</option>
 							</select>
                     </div>
                     </div>

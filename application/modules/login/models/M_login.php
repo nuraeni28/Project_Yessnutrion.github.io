@@ -14,11 +14,22 @@ class m_login extends CI_Model{
 		return $query;
 	}
 
+
 	function get($id = null)
 	{
 		$this->db->from('user');
 		if($id != null){
-			$this->db->where('user_id',$id);
+			$this->db->where('id',$id);
+	}
+	$query = $this->db->get();
+	return $query;
+	}
+
+	function get1($username = null)
+	{
+		$this->db->from('user');
+		if($username != null){
+			$this->db->where('username',$username);
 	}
 	$query = $this->db->get();
 	return $query;

@@ -2,11 +2,13 @@
 class login extends MY_Controller {
 	public function __construct(){ 
 		parent::__construct();
-        //$this->load->model('m_login');
+     
         $this->load->library('form_validation');
+        $this->load->model('m_login');
 	}
 	
 	function index(){
+        
         $this->form_validation->set_rules('username', 'Username', 'required');
         $this->form_validation->set_rules('pass', 'Password', 'required');
         if($this->form_validation->run() == false){
@@ -17,29 +19,50 @@ class login extends MY_Controller {
        
 	}
     function cek_login(){
-            $post = $this->input->post(null,TRUE);
-        if(isset($_POST['login'])){      
-            $this->load->model('m_login');
-            $query = $this->m_login->proses_login($post);
-            if($query->num_rows() > 0){
-                $row = $query->row();
-                $params = array(        
-                    'user_id' => $row->id,
-                    'role' =>$row->role
+        $username = $this->input->post('username');
+        $password =  sha1($this->input->post('pass'));
+        $user = $this->db->get_where('user', ['username' => $username])->row_array();
+            if($user){
+                if($password == $user['password']){
+                    $params = [
+                        'username' => $user['username'],
+                        'role'  => $user['role']
+                    ];
+                    if($user['role']=='0'){
+                        $this->session->set_userdata($params);
+                        redirect('dashboard');
 
-                );
-                $this->session->set_userdata($params);
-                    echo "<script>
-                        alert('Congratulations, login successfully');
-                        window.location='".site_url('halu')."';
-                        </script>";
+                    }elseif($user['role']=='1'){
+                            $this->session->set_userdata($params);
+                            redirect('halu/home');
+                        }
+                    else{
+                        $this->session->set_userdata($params);
+                        redirect('seller/product');
+                    }
+                }else{
+                   
+                        echo "<script>
+                                alert('Sorry, Password is wrong');
+                                window.location='".site_url('login')."';
+                                </script>";
+                    } 
             } else {
                 echo "<script>
-                        alert('Sorry, login failed');
+                        alert('Sorry, Your account is not found');
                         window.location='".site_url('login')."';
                         </script>";
-            }
-}
-}
+        }
+    }
+    
+
+
+    function logout(){
+        $params = array('user_id', 'role');
+        $this->session->unset_userdata($params);
+        $this->session->sess_destroy();
+        redirect('login');
+
+    }
 }
            

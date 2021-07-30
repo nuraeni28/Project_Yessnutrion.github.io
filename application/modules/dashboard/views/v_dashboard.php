@@ -54,6 +54,12 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
+              <a class="nav-link active" href="<?= base_url('dashboard')?>">
+                <i class="fas fa-home text-black"></i>
+                <span class="nav-link-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link active" href="<?= base_url('dashboard/patient')?>">
                 <i class="fas fa-hospital-user text-gray"></i>
                 <span class="nav-link-text">Patient Management</span>
@@ -66,42 +72,11 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="examples/map.html">
-                <i class="ni ni-pin-3 text-primary"></i>
-                <span class="nav-link-text">Google</span>
+              <a class="nav-link active" href="<?= base_url('dashboard/seller')?>">
+                <i class="fas fa-store text-red"></i>
+                <span class="nav-link-text">Seller Management</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="examples/profile.html">
-                <i class="ni ni-single-02 text-yellow"></i>
-                <span class="nav-link-text">Profile</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="examples/tables.html">
-                <i class="ni ni-bullet-list-67 text-default"></i>
-                <span class="nav-link-text">Tables</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="examples/login.html">
-                <i class="ni ni-key-25 text-info"></i>
-                <span class="nav-link-text">Login</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="examples/register.html">
-                <i class="ni ni-circle-08 text-pink"></i>
-                <span class="nav-link-text">Register</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="examples/upgrade.html">
-                <i class="ni ni-send text-dark"></i>
-                <span class="nav-link-text">Upgrade</span>
-              </a>
-            </li>
-          
   </nav>
   <!-- Main content -->
   <div class="main-content" id="panel">
@@ -160,7 +135,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">Nuraeni</h4>
+                            <h4 class="mb-0 text-sm"></h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>2 hrs ago</small>
@@ -217,7 +192,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">Nuraeni</h4>
+                            <h4 class="mb-0 text-sm"></h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>2 hrs ago</small>
@@ -305,7 +280,7 @@
                     <img alt="Image placeholder" src="<?= base_url('assets/dashboard/img/2.png')?>">
                   </span>
                   <div class="media-body  ml-2  d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">Nuraeni</span>
+                    <span class="mb-0 text-sm  font-weight-bold"><?=$user['username'];?></span>
                   </div>
                 </div>
               </a>
@@ -330,7 +305,7 @@
                   <span>Support</span>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="#!" class="dropdown-item">
+                <a href="<?= base_url('login/login/logout')?>" class="dropdown-item">
                   <i class="ni ni-user-run"></i>
                   <span>Logout</span>
                 </a>

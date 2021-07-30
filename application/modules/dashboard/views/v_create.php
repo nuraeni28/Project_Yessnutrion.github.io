@@ -48,7 +48,7 @@
             ?>
               <div class="card_inner_1s">
               <div class="pull-right">
-            <a href="<?= base_url('dashboard/patient')?>" class="btn btn-warning btn-flat" style="margin-bottom:20px;"><i class="fa fa-undo"></i>Back</a>
+            <a href="<?= base_url('dashboard')?>" class="btn btn-warning btn-flat" style="margin-bottom:20px;"><i class="fa fa-undo"></i>Back</a>
             </div>
             
             <div class="box-body">

@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,6 +42,14 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">   
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  
+    
+
+     <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="<?= base_url('assets/home/css/style_n.css')?>" />
+ 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -85,7 +94,7 @@
                                     <a href="#"  role="button" aria-haspopup="true" aria-expanded="false"><span class="" data-hover="Depertment">Nutrition Consul</span></a>
                                 </li>
                                 <li>
-                                    <a href="#"  role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Depertment">Nutrishop</span></a>
+                                    <a href="<?= base_url('halu/nutrishop')?>"  role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Depertment">Nutrishop</span></a>
                                 </li>
                                  <ul class="nav navbar-nav">
                                     <li><a href="<?php echo base_url('register');?>"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -94,7 +103,7 @@
                                 
                                
                                 <li>
-                                    <div class="dropdown-buttons">
+                                    <div class="dropdown" style="padding-top:6px;">
                                         <div class="btn-group menu-search-box">
                     
                                             <button type="button" class="btn dropdown-toggle" id="header-drop-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon icon-Search"></i></button>
@@ -111,9 +120,10 @@
                                         </div>
                                 
                                         <div class="btn-group">
-                                            <button type="button" class="btn dropdown-toggle" id="header-drop-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon icon-ShoppingCart"></i><span class="menu-cart">0</span></button>
-                                            <ul class="dropdown-menu dropdown-menu-right cart dropdown-animation" aria-labelledby="header-drop-4">
-                                            </ul>
+                                            <?php
+                                           $keranjang =  '<i class="icon icon-ShoppingCart"></i>'.$this->cart->total_items('<span class="menu-cart">')
+                                            ?>
+                                            <?php echo anchor('halu/detail_keranjang', $keranjang) ?>
                                         </div>
                                     </div>
                                 </li>
@@ -124,7 +134,4 @@
             </div>
         </div>
     </div>
-    <!-- Header navbar end -->
-
-  
-  
+    <!-- Header navbar end --> 

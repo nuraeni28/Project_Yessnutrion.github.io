@@ -60,15 +60,15 @@
                             <div class="border-style-1"></div>
                           </div>
                           <div class="flicker-feed gutter">
-                            <a href="img/flicker/1.jpg" class="lightbox-image" title="Image Caption Here"><img src="assets/home/img/flicker/1.jpg" alt=""></a>
-                            <a href="img/flicker/2.jpg" class="lightbox-image" title="Image Caption Here"><img src="assets/home/img/flicker/2.jpg" alt=""></a>
-                            <a href="img/flicker/3.jpg" class="lightbox-image" title="Image Caption Here"><img src="assets/home/img/flicker/3.jpg" alt=""></a>
-                            <a href="img/flicker/4.jpg" class="lightbox-image" title="Image Caption Here"><img src="assets/home/img/flicker/4.jpg" alt=""></a>
-                            <a href="img/flicker/5.jpg" class="lightbox-image" title="Image Caption Here"><img src="assets/home/img/flicker/5.jpg" alt=""></a>
-                            <a href="img/flicker/6.jpg" class="lightbox-image" title="Image Caption Here"><img src="assets/home/img/flicker/6.jpg" alt=""></a>
-                            <a href="img/flicker/7.jpg" class="lightbox-image" title="Image Caption Here"><img src="assets/home/img/flicker/7.jpg" alt=""></a>
-                            <a href="img/flicker/8.jpg" class="lightbox-image" title="Image Caption Here"><img src="assets/home/img/flicker/8.jpg" alt=""></a>
-                            <a href="img/flicker/9.jpg" class="lightbox-image" title="Image Caption Here"><img src="assets/home/img/flicker/9.jpg" alt=""></a>
+                            <a href="img/flicker/1.jpg" class="lightbox-image" title="Image Caption Here"><img src="<?= base_url('assets//home/img/flicker/1.jpg')?>" alt=""></a>
+                            <a href="img/flicker/2.jpg" class="lightbox-image" title="Image Caption Here"><img src="<?= base_url('assets//home/img/flicker/2.jpg')?>" alt=""></a>
+                            <a href="img/flicker/3.jpg" class="lightbox-image" title="Image Caption Here"><img src="<?= base_url('assets//home/img/flicker/3.jpg')?>" alt=""></a>
+                            <a href="img/flicker/4.jpg" class="lightbox-image" title="Image Caption Here"><img src="<?= base_url('assets//home/img/flicker/4.jpg')?>" alt=""></a>
+                            <a href="img/flicker/5.jpg" class="lightbox-image" title="Image Caption Here"><img src="<?= base_url('assets//home/img/flicker/5.jpg')?>" alt=""></a>
+                            <a href="img/flicker/6.jpg" class="lightbox-image" title="Image Caption Here"><img src="<?= base_url('assets//home/img/flicker/6.jpg')?>" alt=""></a>
+                            <a href="img/flicker/7.jpg" class="lightbox-image" title="Image Caption Here"><img src="<?= base_url('assets//home/img/flicker/7.jpg')?>" alt=""></a>
+                            <a href="img/flicker/8.jpg" class="lightbox-image" title="Image Caption Here"><img src="<?= base_url('assets//home/img/flicker/8.jpg')?>" alt=""></a>
+                            <a href="img/flicker/9.jpg" class="lightbox-image" title="Image Caption Here"><img src="<?= base_url('assets//home/img/flicker/9.jpg')?>" alt=""></a>
                           </div>
                         </div>
                       </div>
@@ -110,7 +110,9 @@
     <!-- Main Custom JS -->
     <script type="text/javascript" src="<?php echo base_url('assets/home/js/script.js')?>"></script>
 
-
+    <script src="<?= base_url('assets/js/products.js')?>"></script>
+  <script src="<?= base_url('assets/js/slider.js')?>"></script>
+  <script src="<?= base_url('assets/js/index.js')?>"></script>
 </body>
 
 </html>

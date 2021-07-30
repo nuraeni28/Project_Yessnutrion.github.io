@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/register/css/style_1.css')?>">
 
   </head>
-  <body>    
+  <body> 
+  <?php echo form_open('login'); ?> 
   <form action="login/cek_login" method="POST">   
 
     <section class="login py-5" style="background:#03a1a0">
@@ -22,22 +23,20 @@
                 <div class="col-lg-6 col-md6 col-sm-12 col-12 py-5">
                     <img src="<?= base_url('assets/login/images/1.png')?>" class="img-fluid" style="margin-top:150px;">
                 </div>
-                <?php echo form_open('login/cek_login'); ?>
-					
                 <div class="col-lg-6 col-md6 col-sm-12 col-12">
                     <div class="row">
                         <div class="offset-1 col-lg-9 col-md-9 col-sm-11 col-12">
                             <h1 class="font-weight-bold pb-5 pt-5">Login</h1>
                             <label for="name"><strong>Username</label>
-                            <input type="text" class="inp1 pb-2 pl-4" name="username" placeholder="Username">
-                            <?= form_error('name');?>	
+                            <input type="text" class="inp1 pb-2 pl-4" name="username" id="username" placeholder="Username">
+                            <?= form_error('username', '<small class="text-danger pl-3">','</small>');?>	
                         </div>
                     </div>
                     <div class="row pt-5">
                         <div class="offset-1 col-lg-9 col-md-9 col-sm-11 col-12">
                         <label for="pass">Password</label>
-                            <input type="password" class="inp1 pb-2 pl-4" name="pass" placeholder="Password">
-                            <?= form_error('pass');?>	
+                            <input type="password" class="inp1 pb-2 pl-4" name="pass" id="pass" placeholder="Password">
+                            <?= form_error('pass', '<small class="text-danger pl-3">','</small>');?>	
                         </div>
                     </div>
                     <div class="row pt-3">

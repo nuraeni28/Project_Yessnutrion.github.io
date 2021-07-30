@@ -41,6 +41,10 @@
           <div class="main__cards_1">
             <div class="card_1">
               <div class="card_inner_1s">
+            <?php
+                if(!$this->session->flashdata('Info') == ''){
+               echo $this->session->flashdata('Info'); }
+            ?>
               <div class="pull-right">
             <a href="<?= base_url('dashboard/add')?>" class="btn btn-success btn-flat" style="margin-bottom:20px;"><i class="fa fa-user-plus"></i>Create</a>
             </div>
@@ -59,7 +63,7 @@
                       <tbody>
                        <?php 
                        $no=1;
-                        foreach ($row->result() as $key => $data) :?>
+                        foreach ($row ->result() as $key => $data) :?>
                         <tr>
                         <td scope="row"><?= $no++; ?></td>
                         <td><?= $data->fullname ?></td>
@@ -67,10 +71,13 @@
                         <td><?= $data->age ?></td>
                         <td><?= $data->email ?></td>
                          <td><?= $data->username ?></td>
+                         <form action="<?=base_url('dashboard/del')?>" method="post">
                          <td class="text-center">
-                         <a href="" class="btn btn-primary btn-xs"> <i class="fa fa-pencil"></i> Update</a>
-                         <a href=""class="btn btn-danger btn-xs"> <i class="fa fa-trash"></i> Delete</a>
+                         <input type="hidden" name = "user_id" value="<?=$data->id?>">
+                         <a href="<?= base_url('dashboard/simpan_edit/'.$data->id)?>" class="btn btn-primary btn-xs"> <i class="fa fa-pencil"></i> Update</a>
+                         <button onclick="return confirm('Apakah Anda yakin?')" class="btn btn-danger btn-xs"> <i class="fa fa-trash"></i> Delete</button>
                          </td> 
+                        </form>
 
 
     </tr>
